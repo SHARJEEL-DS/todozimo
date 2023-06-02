@@ -1,7 +1,7 @@
 export const addTodo=(data)=>
 {
     return {
-        type:"ADD_TODO",
+        type:"Addtodo",
         payload:{
             id: new Date().getTime().toString(),
             data:data
@@ -12,26 +12,26 @@ export const addTodo=(data)=>
 
 export const deleteTodo = (id) =>{
     return {
-        type:"DELETE_TODO",
+        type:"Deletetodo",
         id
     }
 }
 
 export const removeTodo = () => {
     return {
-      type: "REMOVE_COMPLETED_TODO"
+      type: "removetodo"
     };
   };
 
 export const toggleTodoCheck = (id) => {
     return {
-      type: "TOGGLE_TODO_CHECK",
+      type: "check",
       id
     };
   };
 export const setTodoList = (list) => {
   return {
-    type: "SET_TODO_LIST",
+    type: "setlist",
     payload: list,
   };
 };

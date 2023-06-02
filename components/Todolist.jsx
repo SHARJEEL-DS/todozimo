@@ -7,7 +7,7 @@ import {
   removeTodo,
   toggleTodoCheck,
   setTodoList
-} from "@/src/actions/Index";
+} from "../actions/Index";
 const Todo = () => {
   const [inputData, setInputData] = useState("");
   const [activeFilter, setActiveFilter] = useState("all");
